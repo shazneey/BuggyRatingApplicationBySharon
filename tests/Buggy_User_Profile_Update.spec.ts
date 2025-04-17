@@ -5,7 +5,7 @@ dotenv.config({ path: './env/.env.local' });
 
 test('Profile update flow', async ({ page }) => {
   const buggyUrl = process.env.BASE_URL!;
-  const username = process.env.USERNAME!;
+  const username = process.env.LOGIN_USERNAME!;
   const password = process.env.PASSWORD!;
 
   await page.goto(buggyUrl);
